@@ -4,7 +4,11 @@ import Link from "next/link";
 import { AiFillLike } from "react-icons/ai";
 import { FaCalendar } from "react-icons/fa";
 
-const BlogCard = ({ blog }: { blog: Blog }) => {
+type BlogCardProps = {
+  blog: Blog;
+};
+
+const BlogCard = ({ blog }: BlogCardProps) => {
   return (
     <div className="w-full bg-white shadow-md rounded-lg overflow-hidden">
       <figure>
